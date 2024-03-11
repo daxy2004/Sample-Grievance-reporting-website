@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h4 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: calc(33.33% - 5px); /* Adjust width as needed */
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="submit"]:focus {
+            outline: none; /* Removes outline on focus */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbyGIOvQra4vEuph5WZaco2QWfryp30_EXfnnk2qbLilYIZXvFHR6xoWD3WUgfKL1SZ7/exec" name="contact-form">
+            <h4>WasteWise - Grievance Reporting</h4> <!-- Updated heading here -->
+            <div class="form-group">
+                <input type="text" name="your-name" placeholder="Name" required>
+                <input type="text" name="your-number" placeholder="Number" required>
+                <input type="email" name="your-email" placeholder="Email" required>
+            </div>
+            <textarea name="message" rows="7" placeholder="State Your Grievance" required></textarea>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+    <script src="Google Sheet.js"></script>
+</body>
+</html>
